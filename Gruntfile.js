@@ -35,20 +35,29 @@ module.exports = function (grunt) {
         html_components: {
             default_options: {
                 options: {
+                    componentsFolder: 'test/fixtures/components-folder'
                 },
-                files: {
-                    'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-                }
-            },
-            custom_options: {
-                options: {
-                    separator: ': ',
-                    punctuation: ' !!!'
-                },
-                files: {
-                    'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-                }
+                files: [
+                    {
+                        cwd: 'test/fixtures/htmlpages',
+                        src: '**/*.html',
+                        dest: 'tmp'
+                    }
+                ]
             }
+            //                    'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+            //              }
+            /*
+             custom_options: {
+             options: {
+             separator: ': ',
+             punctuation: ' !!!'
+             },
+             files: {
+             'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+             }
+             }
+             */
         },
 
         // Unit tests.
