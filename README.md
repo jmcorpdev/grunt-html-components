@@ -67,6 +67,7 @@ If you want to insert HTML into this attribute, you write it like this :
 <mycomp>
     <_attr2>
         Here some HTML code <br>
+        
         <strong> a strong is used</strong> 
     </_attr2>
 </mycomp>
