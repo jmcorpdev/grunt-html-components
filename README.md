@@ -73,6 +73,34 @@ If you want to insert HTML into this attribute, you write it like this :
 </mycomp>
 ```
 
+### Usage of the component folder
+
+#### Simple tag
+The components folder contains all your custom tags. Each file become a tag : 
+
+`mytag.hbs` become automatically a tag to be use
+ 
+```html
+<mytag></mytag>
+```
+
+#### Typed tag
+
+You can create differents type of a tag, you just have to create a folder,
+and it becomes automatically a tag. An then you create a file and if become the type of the tag
+
+Create the folder `components/field`
+Then create the file `components/field/tag.hbs`
+
+Use your new tag : 
+
+```html
+<field type="tag">
+
+</field>
+```
+
+
 ### Usage Examples
 
 ####Create your first comopnent
